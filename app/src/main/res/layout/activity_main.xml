@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/main_linearlayout"
+            android:paddingLeft="@dimen/small_marginTop"
+            android:paddingRight="@dimen/small_marginTop">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_textview"
+                android:text="@string/name"
+                android:textAlignment="center"
+                app:fontFamily="@font/roboto"
+                style="@style/NameStyle"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/nickname_edittxt" style="@style/NameStyle"
+                android:hint="@string/nickname_hint"/>
+
+        <Button
+                android:text="@string/done_buttontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style = "@style/Widget.AppCompat.Button.Colored"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/name_paddingTop"
+                app:fontFamily="@font/roboto"
+                android:id="@+id/done_button"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" android:id="@+id/nickname_text" style="@style/NameStyle"
+                android:visibility="gone"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/img_star"
+                android:contentDescription="@string/yellow_star"
+                android:layout_marginTop="@dimen/small_marginTop"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bio_scrollview">
+
+            <TextView
+                    android:text="@string/user_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bio_textview"
+                    style="@style/NameStyle"/>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

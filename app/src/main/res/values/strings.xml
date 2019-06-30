@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Kevin Cardenas</string>
+    <string name="yellow_star">Yellow Star Resource Image</string>
+    <string name="user_bio"> KEVIN \n\n\n\n\n\n\n CARDENAS \n\n\n\n\n\n THE GOAT \n\n\n\n\n\n\n\n\n\n\n\n END BIO  \n\n </string>
+    <string name="nickname_hint">Nickname?</string>
+    <string name="done_buttontxt">Done</string>
+</resources>
