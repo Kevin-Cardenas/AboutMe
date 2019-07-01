@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     // Data Binding - special technique which connects a layout to an Activity or Fragment at compile time. Using findViewById is always
     //              done at run time. Binding class is created when the Activity is created. Access the different views without any extra
     //              overhead. Good performance gain
-    // To enable Data Binding you have to make sure that you're wrapping a layout file between the layout tags
+    // To enable Data Binding you have to make sure that you're adding the correct tag in the build.gradle for the app level gradle
 
 
     private lateinit var binding : ActivityMainBinding // Created by the compiler
